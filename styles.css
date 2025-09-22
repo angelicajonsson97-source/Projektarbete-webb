@@ -1,0 +1,105 @@
+:root{
+  --bakgrund: #e9dcc9;
+  --text: #1c1b1b;
+  --accent: #5c4033;
+  --länk: #1b3b2f;
+  --länk-hover: #3e5c4b;
+  --sektion-bg: #f6efe7;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bakgrund);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+body a:not(nav a) {
+  color: var(--länk);
+  text-decoration: underline;
+}
+body a:not(nav a):hover {
+  color: var(--länk-hover);
+}
+header {
+    background-color: var(--accent);
+    color: #f6efe7;
+    padding: 10px 0;
+    text-align: center;
+}
+h1 {
+    color: var(--section-bg);
+}
+h2, h3 {
+    color: var(--accent);
+}  
+section {
+    background-color: var(--sektion-bg);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--accent);
+}
+nav ul li {
+    margin: 0 15px;
+} 
+nav ul li a {
+    color: #f6efe7;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: var(--länk-hover);
+}
+
+section form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: auto;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--bakgrund);
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.1em;    
+}       
+
+.kontaktmain {
+    display: flex;
+  gap: 2rem;
+  padding: 2rem;;
+}
+.kontaktinfo, .formulär {
+     flex: 1; 
+  background-color: var(--sektion-bg);
+  padding: 1rem;
+  border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--accent);
+    color: #f6efe7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
