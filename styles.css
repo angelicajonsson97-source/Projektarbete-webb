@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }   
+                /* Style för allmänna element*/
 :root{
   --bakgrund: #e9dcc9;
   --text: #1c1b1b;
@@ -28,7 +29,7 @@ body a:not(nav a):hover {
 header {
     background-color: var(--section-bg);
     color: var(--accent);
-    padding: 5% 0;
+    padding: 40px;
     text-align: center;
 }
 
@@ -61,6 +62,8 @@ nav ul li a:hover {
     color: var(--länk-hover);
 }
 
+                        /* style för hem hemsidan */
+
 .maincontent {
     padding: 20px;
     display: flex;
@@ -87,7 +90,7 @@ nav ul li a:hover {
   border-radius: 8px;
   
 }
-.columns h3{
+h3 {
     text-align: center;
     margin-bottom: 10px;
 }
@@ -125,7 +128,7 @@ nav ul li a:hover {
 
 }
 
-
+                    /*style kontaktsidan*/
 section form {
     display: flex;
     justify-content: center;
@@ -145,12 +148,32 @@ section form label {
 }       
 .kontaktmain {
  display: flex;
+
  gap: 2rem;
  padding: 2rem;;
 }
+
+.kontaktinfo p {
+    text-align: center;
+    margin: 10px;
+}
+
+.kontaktinfo ul{
+ list-style-position: outside; 
+ padding-left: 20px;
+ margin-left: 20px; 
+}
+
+.kontaktinfo li{
+     margin-bottom: 10px;
+    font-weight: bold; 
+    color: var(--accent);
+}
+
+
 .kontaktinfo, .formulär {
   flex: 1; 
-  background-color: var(--sektion-bg);
+  background-color: var(--section-bg);
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
