@@ -1,10 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
 :root{
   --bakgrund: #e9dcc9;
   --text: #1c1b1b;
   --accent: #5c4033;
   --länk: #1b3b2f;
   --länk-hover: #3e5c4b;
-  --sektion-bg: #f6efe7;
+  --section-bg: #f6efe7;
 }
 body {
     font-family: Arial, sans-serif;
@@ -21,42 +26,105 @@ body a:not(nav a):hover {
   color: var(--länk-hover);
 }
 header {
-    background-color: var(--accent);
-    color: #f6efe7;
-    padding: 10px 0;
+    background-color: var(--section-bg);
+    color: var(--accent);
+    padding: 5% 0;
     text-align: center;
 }
+
 h1 {
-    color: var(--section-bg);
+    color: var(--accent);
 }
 h2, h3 {
     color: var(--accent);
+    padding: 10px;
 }  
-section {
-    background-color: var(--sektion-bg);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+
 nav ul {
     list-style-type: none;
     padding: 10px;
     margin: 10px;
     display: flex;
     justify-content: center;
-    background-color: var(--accent);
+    background-color: var(--section-bg);
 }
 nav ul li {
     margin: 0 15px;
 } 
 nav ul li a {
-    color: #f6efe7;
+    color: var(--accent);
     font-weight: bold;
+    font-size: 24px;
+    
 }
 nav ul li a:hover {
     color: var(--länk-hover);
 }
+
+.maincontent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+.welcome{
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: larger;
+}
+.columns {
+    display: flex;  
+    gap: 20px;
+    justify-content: center;
+    
+}
+.columns > section {
+  flex: 1;            
+  width: 400px;
+  height: 400px;  
+  background-color: var(--section-bg);
+  padding: 20px;
+  border-radius: 8px;
+  
+}
+.columns h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.projects p{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.projects a { 
+    font-weight: bold;
+}
+.imglink {
+    display: flex;
+}
+.contact img{
+    border-radius: 8px;
+    min-height: 100px;
+    max-width: 150px;
+}
+.contact p {
+    text-align: center;
+    margin: 20px;
+}
+.contact ul {
+ list-style-position: outside; 
+ padding-left: 20px;
+ margin-left: 20px;
+}
+
+.contact li{
+    margin-bottom: 10px;
+    font-weight: bold; 
+    color: var(--accent);
+
+}
+
 
 section form {
     display: flex;
@@ -65,9 +133,6 @@ section form {
     max-width: auto;
     margin: auto;
     padding: 20px;
-    background-color: var(--bakgrund);
-    border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 section form label {
     margin-top: 10px;
@@ -78,18 +143,17 @@ section form label {
     align-items: flex-start;
     font-size: 1.1em;    
 }       
-
 .kontaktmain {
-    display: flex;
-  gap: 2rem;
-  padding: 2rem;;
+ display: flex;
+ gap: 2rem;
+ padding: 2rem;;
 }
 .kontaktinfo, .formulär {
-     flex: 1; 
+  flex: 1; 
   background-color: var(--sektion-bg);
   padding: 1rem;
   border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 button {
