@@ -16,26 +16,19 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--bakgrund);
     color: var(--text);
-    margin: 0;
-    padding: 0;
-    margin-bottom: 2rem;
+    
+
 }
-body a:not(nav a) {
-  color: var(--länk);
-  text-decoration: underline;
-}
-body a:not(nav a):hover {
-  color: var(--länk-hover);
-}
+
 header {
-    background-color: var(--section-bg);
-    color: var(--accent);
-    padding: 40px;
+    background-color: var(--accent);
+    color: var(--section-bg);
+    padding: 4%;
     text-align: center;
 }
 
 h1 {
-    color: var(--accent);
+    color: var(--section-bg);
 }
 h2, h3 {
     color: var(--accent);
@@ -48,47 +41,57 @@ nav ul {
     margin: 10px;
     display: flex;
     justify-content: center;
-    background-color: var(--section-bg);
+    background-color: var(--accent);
 }
 nav ul li {
     margin: 0 15px;
 } 
 nav ul li a {
-    color: var(--accent);
+    color: var(--section-bg);
     font-weight: bold;
     font-size: 24px;
+    text-decoration: none;
     
 }
 nav ul li a:hover {
     color: var(--länk-hover);
 }
 a {
+    color: var(--länk);
     cursor: pointer; 
+}
+a:hover {
+    color: var(--länk-hover);
+}
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 4rem;
+    
 }
 
                         /* style för hem hemsidan */
 
 .maincontent {
-    padding: 20px;
     display: flex;
     flex-direction: column; 
 }
 .welcome{
-    margin-bottom: 30px;
-    padding: 20px;
     text-align: center;
     font-size: larger;
 }
 .columns {
     display: flex;  
-    gap: 20px;
-    justify-content: center;
+    gap: 2%;
     
 }
 .columns > section {
   flex: 1;            
-  width: 400px;
-  height: 400px;  
+  width: 400%;
+  height: auto;  
   background-color: var(--section-bg);
   padding: 20px;
   border-radius: 8px;
@@ -103,12 +106,12 @@ h3 {
 .projects p{
     margin: 10px;
     padding: 10px;
-
 }
 
 .projects a { 
     font-weight: bold;
 }
+
 .imglink {
     display: flex;
 }
@@ -133,6 +136,18 @@ h3 {
     font-weight: bold; 
     color: var(--accent);
 }
+                      /* style CV sida*/
+ .container {           
+  width: 400%;
+  height: auto;  
+  background-color: var(--section-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0.1, 0.1, 0.1, 0.1);
+  text-align: center;
+ }
+
+
 
                     /*style kontaktsidan*/
 section form {
@@ -152,6 +167,12 @@ section form label {
     align-items: flex-start;
     font-size: 1.1em;    
 }       
+section form input {
+ height: 30px;
+ width: auto;
+ font-size: 1.1em; 
+}
+
 .kontaktmain {
  display: flex;
 
@@ -198,10 +219,14 @@ button {
 }
 
 footer {
-    background-color: var(--section-bg);
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
+    background-color:var(--accent);
+    color: var(--bakgrund);
+    padding: 40px;
+    position: static;
+    
+    
+}
+footer a {
+    color: var(--bakgrund);
 }
